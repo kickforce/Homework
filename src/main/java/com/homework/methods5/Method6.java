@@ -18,9 +18,13 @@ public class Method6 {
 
   }
 
-  public static void signIn(String username){
-    //напишите тут ваш код
-    System.out.println("Добро пожаловать " + username);
+  public static void signIn(String username) {
+    if (username.equals("user")) {
+      return;
+    } else {
+      System.out.println("Добро пожаловать " + username);
+    }
     System.out.println("Очень скучали по Вам, " + username);
   }
 }
+
