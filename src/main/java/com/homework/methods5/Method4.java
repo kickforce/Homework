@@ -4,7 +4,7 @@ package com.homework.methods5;
  * Напишем утилиту для работы с массивами. Основная часть функционала готова: метод printArray() выводит в консоли все элементы массива.
  * Тебе осталась мелочь: реализовать метод reverseArray(). Он должен менять порядок элементов массива на обратный.
  * Метод должен работать только с массивами целочисленных значений (int[]).
- *
+ * <p>
  * Пример:
  * Если массив содержал элементы:
  * 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
@@ -26,7 +26,13 @@ public class Method4 {
   }
 
   public static void reverseArray(int[] array) {
-    //напишите тут ваш код
+    int i, k, temp;
+    for (i = 0; i < array.length / 2; i++) {
+      temp = array[i];
+      array[i] = array[array.length - i - 1];
+      array[array.length - i - 1] = temp;
+    }
+
   }
 
   public static void printArray(int[] array) {
