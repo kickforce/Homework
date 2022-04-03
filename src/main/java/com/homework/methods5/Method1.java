@@ -2,7 +2,7 @@ package com.homework.methods5;
 
 /**
  * Перед тобой — плохой пример использования методов:
- *
+ * <p>
  * Методы разделили двустишие;
  * Одну строку кода не стоит оборачивать в отдельный метод.
  * Перепиши код так, чтобы весь текст выводился в методе main, а остальные методы удали.
@@ -16,14 +16,18 @@ package com.homework.methods5;
 public class Method1 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-    print1();
-    print2();
+    MethodNew.print1();
+    MethodNew.print2();
   }
-  public static void print1(){
+
+}
+
+ class MethodNew {
+  public static void print1() {
     System.out.println("Я — поэт, зовусь я Цветик.");
   }
-  public static void print2(){
+
+  public static void print2() {
     System.out.println("От меня вам всем приветик.");
   }
 }
