@@ -5,12 +5,12 @@ public class Window {
   private int width = 3;
 
   public void changeSize(int height, int width){
-    height = height;
-    width = width;
+    this.height = height;
+    this.width = width;
   }
 
   public void printSize(){
-    System.out.println("Height = " + height);
-    System.out.println("Width = " + width);
+    System.out.println("Height = " + this.height);
+    System.out.println("Width = " + this.width);
   }
 }
