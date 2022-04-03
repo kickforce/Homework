@@ -49,7 +49,8 @@ public class Exceptions3 {
         break;
       }
 
-       try {int studentId = Integer.parseInt(input);
+      try {
+        int studentId = Integer.parseInt(input);
         System.out.println(ANSWERING + studentsJournal.get(studentId));
       } catch (ArrayIndexOutOfBoundsException e) {
         System.out.println(NOT_EXIST);
