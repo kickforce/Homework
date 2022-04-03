@@ -1,5 +1,6 @@
 package com.homework.exception8;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -27,18 +28,18 @@ public class Exceptions3 {
   public static final String INTEGER_REQUIRED = "Нужно ввести целое число";
 
   static List<String> studentsJournal = Arrays.asList(
-      "Тимур Мясной"
-      , "Пенелопа Сиволап"
-      , "Орест Злобин"
-      , "Ирида Продувалова"
-      , "Гектор Гадюкин"
-      , "Электра Чемоданова"
-      , "Гвидон Недумов"
-      , "Роксана Борисенко"
-      , "Юлиан Мумбриков"
-      , "Зигфрид Горемыкин");
+          "Тимур Мясной"
+          , "Пенелопа Сиволап"
+          , "Орест Злобин"
+          , "Ирида Продувалова"
+          , "Гектор Гадюкин"
+          , "Электра Чемоданова"
+          , "Гвидон Недумов"
+          , "Роксана Борисенко"
+          , "Юлиан Мумбриков"
+          , "Зигфрид Горемыкин");
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     Scanner scanner = new Scanner(System.in);
 
     while (true) {
@@ -48,8 +49,17 @@ public class Exceptions3 {
         break;
       }
 
-      int studentId = Integer.parseInt(input);
-      System.out.println(ANSWERING + studentsJournal.get(studentId));
+       try {int studentId = Integer.parseInt(input);
+        System.out.println(ANSWERING + studentsJournal.get(studentId));
+      } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println(NOT_EXIST);
+      } catch (NumberFormatException exception) {
+        System.out.println(INTEGER_REQUIRED);
+      }
     }
   }
 }
+
+
+
+
