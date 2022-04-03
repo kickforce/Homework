@@ -1,5 +1,7 @@
 package com.homework.methods5;
 
+import java.util.Scanner;
+
 /**
  * Перед тобой метод signIn(), который приветствует пользователей сайта. Сейчас он приветствует всех пользователей, а должен только зарегистрированных.
  * Имена всех незарегистрированных пользователей — "user".
@@ -15,7 +17,10 @@ package com.homework.methods5;
 public class Method6 {
 
   public static void main(String[] args) {
-
+    Scanner scan = new Scanner(System.in);
+    String user= scan.nextLine();
+    signIn(user);
+    scan.close();
   }
 
   public static void signIn(String username) {
