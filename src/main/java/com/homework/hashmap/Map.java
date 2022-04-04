@@ -3,8 +3,8 @@ package com.homework.hashmap;
 import java.util.HashMap;
 
 /**
- * В классе Map объявлено поле grades типа HashMap<String, Double>, где ключ — имя и фамилия студента, а значение - его средняя оценка.
- * Твоя задача — реализовать метод addStudents, который добавит 5 студентов с их средней оценкой в коллекцию grades.
+ *В классе Map объявлено поле grades типа HashMap<String, Double>, где ключ — имя и фамилия студента, а значение - его средняя оценка.
+ *  Твоя задача — реализовать метод addStudents, который добавит 5 студентов с их средней оценкой в коллекцию grades.
  * Значения можешь выбрать любые.
  * Требования:
  * •	В классе Map нужно инициализировать публичное статическое поле grades типа HashMap<String, Double>.
@@ -21,11 +21,6 @@ public class Map {
   }
 
   public static void addStudents() {
-    grades.put("Иван", 3.3);
-    grades.put("Петр", 4.3);
-    grades.put("Сергей", 4.4);
-    grades.put("Евгений", 4.1);
-    grades.put("Юрий", 3.3);
-
+    //напишите тут ваш код
   }
 }
