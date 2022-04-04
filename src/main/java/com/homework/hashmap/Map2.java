@@ -1,6 +1,7 @@
 package com.homework.hashmap;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * В классе Map2 есть метод getProgrammingLanguages,
@@ -13,21 +14,20 @@ import java.util.ArrayList;
 
 public class Map2 {
 
+  public static HashMap<Integer, String> lang = new HashMap<>();
   public static void main(String[] args) {
     System.out.println(getProgrammingLanguages());
   }
 
-  public static ArrayList<String> getProgrammingLanguages() {
-    //напишите тут ваш код
-    ArrayList<String> programmingLanguages = new ArrayList<>();
-    programmingLanguages.add("Java");
-    programmingLanguages.add("Kotlin");
-    programmingLanguages.add("Go");
-    programmingLanguages.add("Javascript");
-    programmingLanguages.add("Typescript");
-    programmingLanguages.add("Python");
-    programmingLanguages.add("PHP");
-    programmingLanguages.add("C++");
-    return programmingLanguages;
+  public static HashMap<Integer, String> getProgrammingLanguages() {
+    lang.put(1, "Java");
+    lang.put(2,"Kotlin");
+    lang.put(3,"Go");
+    lang.put(4,"Javascript");
+    lang.put(5,"Typescript");
+    lang.put(6,"Python");
+    lang.put(7,"PHP");
+    lang.put(8,"C++");
+    return lang;
   }
 }
