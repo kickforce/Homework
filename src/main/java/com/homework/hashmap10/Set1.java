@@ -1,5 +1,6 @@
 package com.homework.hashmap10;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -19,12 +20,22 @@ public class Set1 {
     System.out.println("___________________________________");
 
     HashSet<String> hashSet = arrayToHashSet(array);
-    for(String s : hashSet) {
+    for (String s : hashSet) {
       System.out.println(s);
     }
   }
 
   public static HashSet<String> arrayToHashSet(String[] strings) {
-    return null;//напишите тут ваш код
+
+
+    HashSet<String> hash = new HashSet<>();
+    for (int i = 0; i < strings.length; i++) {
+
+      hash.add((strings[i]));
+    }
+
+    return hash;
+
   }
 }
+
