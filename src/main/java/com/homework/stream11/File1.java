@@ -1,9 +1,11 @@
+/*
 package com.homework.stream11;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+*/
 /**
  Нужно написать программу, которая будет считывать с клавиатуры два пути к файлу.
 
@@ -16,7 +18,8 @@ import java.util.Scanner;
  •	В программе должны быть использованы соответствующие методы класса Files: createFile(Path.class), move(Path, Path), delete(Path), exists(Path)/notExists(Path).
  •	Программа должна обрабатывать введенные пути согласно условию.
  •	Не используй следующие классы: File, FileInputStream, FileOutputStream, FileReader, FileWriter пакета java.io.
- */
+ *//*
+
 public class File1 {
 
   public static void main(String[] args) throws IOException {
@@ -26,3 +29,4 @@ public class File1 {
     //напишите тут ваш код
   }
 }
+*/

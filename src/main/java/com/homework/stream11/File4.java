@@ -1,9 +1,11 @@
+/*
 package com.homework.stream11;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+*/
 /**
  * Напиши программу, которая будет считывать с клавиатуры пути к двум директориям и перемещать файлы из одной директории
  * в другую (только файлы, директории игнорируй).
@@ -13,7 +15,8 @@ import java.util.Scanner;
  * •	В программе должны быть использованы соответствующие методы класса Files согласно условию.
  * •	Программа должна перемещать файлы из одной директории в другую согласно условию.
  * •	Не используй следующие классы: File, FileInputStream, FileOutputStream, FileReader, FileWriter пакета java.io.
- */
+ *//*
+
 
 public class File4 {
 
@@ -24,3 +27,4 @@ public class File4 {
     //напишите тут ваш код
   }
 }
+*/

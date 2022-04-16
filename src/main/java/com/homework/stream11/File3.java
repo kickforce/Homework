@@ -1,9 +1,11 @@
+/*
 package com.homework.stream11;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+*/
 /**
  *
  УсловиеДерево классов
@@ -16,7 +18,8 @@ import java.util.Scanner;
  •	В программе должны быть использованы соответствующие методы класса Files: newDirectoryStream(), isRegularFile() или isDirectory(), copy().
  •	Программа должна копировать файлы из одной директории в другую согласно условию.
  •	Не используй следующие классы: File, FileInputStream, FileOutputStream, FileReader, FileWriter пакета java.io.
- */
+ *//*
+
 
 public class File3 {
 
@@ -27,3 +30,4 @@ public class File3 {
     //напишите тут ваш код
   }
 }
+*/

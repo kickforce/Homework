@@ -7,19 +7,19 @@ import java.util.Scanner;
  * В блоке catch выведи на экран переменную answer и брось дальше пойманное исключение.
  * Требования:
  * •	После ввода с клавиатуры "ок" программа должна завершаться исключением SecurityException.
- * •	В блоке catch в консоли должна выводиться переменная answer, чтобы после ввода с клавиатуры "ок" все ранее введенные строки вывелись в консоли в обратном порядке.
+ * •	В блоке catch в консоли должна выводиться переменная answer, чтобы после ввода с клавиатуры
+ * "ок" все ранее введенные строки вывелись в консоли в обратном порядке.
  * •	В блоке catch должно выбрасываться пойманное исключение, а не создаваться новое.
  */
 public class Exceptions5 {
 
   public static void main(String[] args) {
-
+  Scanner scanner = new Scanner(System.in);
+  String answer = scanner.nextLine();
+  buyElephant(answer,scanner);
   }
 
-  static void buyElephant(
-      String answer,
-      Scanner scanner
-  ) {
+  static void buyElephant(String answer, Scanner scanner) {
     if (answer == null) {
       System.out.println("Купи слона");
     } else if (answer.toLowerCase().equals("ок")) {
@@ -28,9 +28,7 @@ public class Exceptions5 {
     } else {
       System.out.println("Все говорят \"" + answer + "\", а ты купи слона");
     }
-
     answer = scanner.nextLine();
-
     try {
       buyElephant(answer, scanner);
     } catch (Exception e) {

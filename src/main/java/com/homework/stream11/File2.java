@@ -1,9 +1,11 @@
+/*
 package com.homework.stream11;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+*/
 /**
  * Напиши программу, которая будет считывать с клавиатуры путь к директории,
  * получать список файлов и директорий в заданной директории и выводить в консоли информацию о них в виде:
@@ -24,7 +26,8 @@ import java.util.Scanner;
  * •	В программе должны быть использованы соответствующие методы класса Files: newDirectoryStream(Path), isRegularFile(Path) и isDirectory(Path).
  * •	Программа должна получать список файлов и директорий в заданной директории и выводить в консоли информацию согласно условию.
  * •	Не используй следующие классы: File, FileInputStream, FileOutputStream, FileReader, FileWriter пакета java.io.
- */
+ *//*
+
 
 public class File2 {
 
@@ -38,3 +41,4 @@ public class File2 {
     //напишите тут ваш код
   }
 }
+*/

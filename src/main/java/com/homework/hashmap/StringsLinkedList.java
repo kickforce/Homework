@@ -9,11 +9,12 @@ public class StringsLinkedList {
     while ((currentElement) != null) {
       System.out.println(currentElement.value);
       currentElement = currentElement.next;
+      System.out.println("213");
     }
   }
 
   public void add(String value) {
-    //напишите тут ваш код
+
   }
 
   public static class Node {
