@@ -16,9 +16,25 @@ public class Method5 {
 
   }
 
-  public static void universalMethod(){
+  public static void universalMethod() {
 
   }
 
-  //напишите тут ваш код
+  static <T> void universalMethod(T a, T c) {
+
+  }
+
+  static <T> void universalMethod(T a, int b) {
+
+  }
+  static <T> void universalMethod(T a, T b, int c) {
+
+  }
+
+  static <T> void universalMethod(T a, T b, T c) {
+
+  }
+  //и так далее
+
+
 }
