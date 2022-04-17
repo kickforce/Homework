@@ -5,29 +5,35 @@ import java.util.HashSet;
 import static java.util.Arrays.asList;
 
 /**
- * В классе Set2 есть метод checkWords(String), который должен проверять наличие переданного слова в множестве words.
- * Если слово есть, то выводим в консоль:
- * Слово [переданное слово] есть в множестве
- * Если нет:
- * Слова [переданное слово] нет в множестве
+ * � ������ Set2 ���� ����� checkWords(String), ������� ������ ��������� ������� ����������� ����� � ��������� words.
+ * ���� ����� ����, �� ������� � �������:
+ * ����� [���������� �����] ���� � ���������
+ * ���� ���:
+ * ����� [���������� �����] ��� � ���������
  *
- * Метод main не участвует в проверке.
+ * ����� main �� ��������� � ��������.
  *
- * Пример вывода:
- * Слово Java есть в множестве
- * Требования:
- * •	В классе Set2 должно быть публичное статическое поле words типа HashSet<String>.
- * •	В классе Set2 должен быть публичный статический метод checkWords(String) с типом возвращаемого значения void.
- * •	Метод checkWords(String) должен работать согласно условию.
+ * ������ ������:
+ * ����� Java ���� � ���������
+ * ����������:
+ * �	� ������ Set2 ������ ���� ��������� ����������� ���� words ���� HashSet<String>.
+ * �	� ������ Set2 ������ ���� ��������� ����������� ����� checkWords(String) � ����� ������������� �������� void.
+ * �	����� checkWords(String) ������ �����к��� �������� �������.
  */
 
 public class Set2 {
 
-  public static HashSet<String> words = new HashSet<>(asList("Если бы меня попросили выбрать язык на замену Java я бы не выбирал".split(" ")));
+  public static HashSet<String> words = new HashSet<>(asList("���� �� ���� ��������� ������� ���� �� ������ Java � �� �� �������".split(" ")));
 
   public static void checkWords(String word) {
-    //напишите тут ваш код
-  }
+    if(words.contains(word))
+    {
+      System.out.println(String.format("����� %s ���� � ���������", word));
+  }else {
+      System.out.println(String.format("����� %s ��� � ���������", word));
+    }
+    }
+
 
   public static void main(String[] args) {
     checkWords("JavaScript");
