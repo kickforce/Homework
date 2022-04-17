@@ -17,7 +17,7 @@ public class Set3 {
     Iterator<String> iter = words.iterator();
     while (iter.hasNext()){
       String out= iter.next();
-      System.out.println(iter);
+      System.out.println(out);
     }
   }
 
