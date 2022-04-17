@@ -38,6 +38,6 @@ public class Car {
 
   @Override
   public String toString() {
-    return "Автомобиль " + model + ", цена - " + price + " USD";
+    return "Автомобиль " + model ;
   }
 }
