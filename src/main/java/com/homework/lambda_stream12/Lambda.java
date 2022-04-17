@@ -15,8 +15,9 @@ import java.util.Comparator;
  * Метод main() не принимает участие в тестировании.
  * Требования:
  * •	Замени внутренний анонимный класс Comparator<Integer> на лямбда-выражение.
- * •	В методе sortNumbers(ArrayList<Integer>) нужно сортировать список чисел по возрастанию.
+ * •	В методе sortNumbers(ArrayList<Integer> ) нужно сортировать список чисел по возрастанию.
  */
+
 public class Lambda {
 
   public static void main(String[] args) {
@@ -32,12 +33,7 @@ public class Lambda {
   }
 
   public static void sortNumbers(ArrayList<Integer> numbers) {
-    Comparator<Integer> comparator = new Comparator<Integer>() {
-      @Override
-      public int compare(Integer i1, Integer i2) {
-        return i1 - i2;
-      }
-    };
-    Collections.sort(numbers, comparator);
+    numbers.sort(Comparator.comparingInt((Integer i)-> i));
+
   }
 }
